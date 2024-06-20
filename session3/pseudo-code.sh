@@ -9,7 +9,10 @@ Requirements
 3. check ~/.ssh/known_hosts to see if github.com is a known host
 4. check if git user has been configured (~/.gitconfiq)
 
-
+Step 0: 
+  check for the number of arguments given
+  if none, let user know the usage of teh scrip
+  exit 
 Step 1: 
    check if git is install or install git
 
@@ -35,4 +38,7 @@ Step 4:
      -ask user for github associated email and save as var
      -configure the user with the provided information
 
-
+Step 5: 
+  git add $1
+  git cmmit -m "$2"
+  git push
